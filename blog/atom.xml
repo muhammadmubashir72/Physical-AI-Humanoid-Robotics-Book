@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog</id>
+    <title>Physical AI &amp; Humanoid Robotics Blog</title>
+    <updated>2025-12-06T21:29:37.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog"/>
+    <subtitle>Physical AI &amp; Humanoid Robotics Blog</subtitle>
+    <icon>https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introduction to Physical AI]]></title>
+        <id>https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog/introduction-to-physical-ai</id>
+        <link href="https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog/introduction-to-physical-ai"/>
+        <updated>2025-12-06T21:29:37.000Z</updated>
+        <summary type="html"><![CDATA[Physical AI represents a paradigm shift from digital intelligence to embodied intelligence. Unlike traditional AI that operates in virtual spaces, Physical AI systems function in the real world, understanding and manipulating physical objects and environments.]]></summary>
+        <content type="html"><![CDATA[<p>Physical AI represents a paradigm shift from digital intelligence to embodied intelligence. Unlike traditional AI that operates in virtual spaces, Physical AI systems function in the real world, understanding and manipulating physical objects and environments.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-embodied-intelligence">What is Embodied Intelligence?<a href="#what-is-embodied-intelligence" class="hash-link" aria-label="Direct link to What is Embodied Intelligence?" title="Direct link to What is Embodied Intelligence?">​</a></h2><p>Embodied intelligence refers to AI systems that interact with the physical world through sensors and actuators. These systems must understand physical laws, spatial relationships, and material properties to function effectively.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-robotics-stack">The Robotics Stack<a href="#the-robotics-stack" class="hash-link" aria-label="Direct link to The Robotics Stack" title="Direct link to The Robotics Stack">​</a></h2><p>Modern robotics requires integration across multiple layers:</p><ul><li><strong>Perception</strong>: Understanding the environment through sensors</li><li><strong>Planning</strong>: Deciding what actions to take</li><li><strong>Control</strong>: Executing precise motor commands</li><li><strong>Learning</strong>: Adapting to new situations and improving over time</li></ul><p>Stay tuned for deeper dives into each of these components!</p>]]></content>
+        <category label="physical-ai" term="physical-ai"/>
+        <category label="robotics" term="robotics"/>
+        <category label="embodied-intelligence" term="embodied-intelligence"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ROS 2 Fundamentals Explained]]></title>
+        <id>https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog/ros2-fundamentals</id>
+        <link href="https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog/ros2-fundamentals"/>
+        <updated>2025-12-06T21:29:37.000Z</updated>
+        <summary type="html"><![CDATA[Robot Operating System 2 (ROS 2) is the next generation of the Robot Operating System, designed for production environments. It provides a flexible framework for writing robot software and is widely used in both academic and industrial robotics applications.]]></summary>
+        <content type="html"><![CDATA[<p>Robot Operating System 2 (ROS 2) is the next generation of the Robot Operating System, designed for production environments. It provides a flexible framework for writing robot software and is widely used in both academic and industrial robotics applications.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-concepts">Key Concepts<a href="#key-concepts" class="hash-link" aria-label="Direct link to Key Concepts" title="Direct link to Key Concepts">​</a></h2><p>ROS 2 is built around several core concepts that enable distributed computation and communication between robot components:</p><ul><li><strong>Nodes</strong>: Individual components of a ROS system that perform computation</li><li><strong>Topics</strong>: Named buses over which nodes exchange messages</li><li><strong>Services</strong>: Synchronous request/response communication between nodes</li><li><strong>Actions</strong>: Asynchronous request/response communication with feedback</li><li><strong>Parameters</strong>: Configuration values that can be changed at runtime</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-ros-2">Why ROS 2?<a href="#why-ros-2" class="hash-link" aria-label="Direct link to Why ROS 2?" title="Direct link to Why ROS 2?">​</a></h2><p>ROS 2 addresses several limitations of the original ROS and introduces improvements for production use:</p><ul><li><strong>Real-Time Support</strong>: Better support for systems requiring deterministic timing</li><li><strong>Multi-Robot Systems</strong>: Improved support for multiple robots working together</li><li><strong>Cross-Platform Support</strong>: Works on Linux, Windows, and macOS</li><li><strong>Security</strong>: Built-in security features for enterprise environments</li><li><strong>ROS 1 Compatibility</strong>: Tools for migrating existing ROS 1 systems</li></ul><p>These fundamentals form the basis for all the modules in our course. Understanding these concepts is crucial for building complex robotic applications.</p>]]></content>
+        <category label="ros2" term="ros2"/>
+        <category label="robotics" term="robotics"/>
+        <category label="fundamentals" term="fundamentals"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Our Robotics Blog]]></title>
+        <id>https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog/welcome-to-blog</id>
+        <link href="https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book/blog/welcome-to-blog"/>
+        <updated>2025-12-06T21:29:37.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the official blog for the Physical AI & Humanoid Robotics textbook. This blog will feature updates, insights, and additional content related to the course.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the official blog for the Physical AI &amp; Humanoid Robotics textbook. This blog will feature updates, insights, and additional content related to the course.</p><p>Stay tuned for more posts about robotics, AI, and humanoid development!</p>]]></content>
+        <category label="robotics" term="robotics"/>
+        <category label="ai" term="ai"/>
+        <category label="humanoid" term="humanoid"/>
+    </entry>
+</feed>
