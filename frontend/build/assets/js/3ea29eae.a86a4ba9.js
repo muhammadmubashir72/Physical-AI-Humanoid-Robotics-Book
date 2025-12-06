@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkphysical_ai_humanoid_robotics=globalThis.webpackChunkphysical_ai_humanoid_robotics||[]).push([[6714],{3840:a=>{a.exports=JSON.parse('{"label":"fundamentals","permalink":"/blog/tags/fundamentals","allTagsPath":"/blog/tags","count":1}')}}]);

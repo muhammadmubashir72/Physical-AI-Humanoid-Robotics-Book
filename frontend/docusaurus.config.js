@@ -8,8 +8,8 @@ const config = {
   favicon: "/img/favicon.ico",
 
   // --- GITHUB PAGES DEPLOY SETTINGS ---
-  url: "https://muhammadmubashir72.github.io",
-  baseUrl: "/Physical-AI-Humanoid-Robotics-Book/",
+  url: "https://physical-ai-humanoid-robotics-book-one-beta.vercel.app'",
+  baseUrl: "/",
   organizationName: "muhammadmubashir72",
   projectName: "Physical-AI-Humanoid-Robotics-Book",
   deploymentBranch: "gh-pages",
