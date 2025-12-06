@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkphysical_ai_humanoid_robotics=globalThis.webpackChunkphysical_ai_humanoid_robotics||[]).push([[1013],{1848:o=>{o.exports=JSON.parse('{"label":"ros2","permalink":"/Physical-AI-Humanoid-Robotics-Book/blog/tags/ros-2","allTagsPath":"/Physical-AI-Humanoid-Robotics-Book/blog/tags","count":1}')}}]);

@@ -1,7 +1,9 @@
 {
-  "name": "my-website",
+ "name": "physical-ai-humanoid-robotics",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://muhammadmubashir72.github.io/Physical-AI-Humanoid-Robotics-Book",
+
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

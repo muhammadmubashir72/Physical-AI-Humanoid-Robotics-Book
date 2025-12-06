@@ -7,11 +7,13 @@ const config = {
   tagline: "The Future Is Embodied",
   favicon: "/img/favicon.ico",
 
-  url: "https://your-docusaurus-site.example.com",
-  baseUrl: "/",
+  // --- GITHUB PAGES DEPLOY SETTINGS ---
+  url: "https://muhammadmubashir72.github.io",
+  baseUrl: "/Physical-AI-Humanoid-Robotics-Book/",
+  organizationName: "muhammadmubashir72",
+  projectName: "Physical-AI-Humanoid-Robotics-Book",
+  deploymentBranch: "gh-pages",
 
-  organizationName: "panaversity",
-  projectName: "physical-ai-humanoid-robotics",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
