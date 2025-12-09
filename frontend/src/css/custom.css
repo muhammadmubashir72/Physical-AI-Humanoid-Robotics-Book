@@ -997,67 +997,260 @@ h1, h2 { font-size: 2.5rem !important; }
   .curriculum-subtitle {
     font-size: 1.2rem !important;
   }
+}
 
-  .learning-list,
-  .key-features-list {
-    font-size: 1.15rem !important;
-    line-height: 1.6 !important;
+/*
+ * Docs Page Layout Fixes
+ * Addresses excessive right-side whitespace on large screens
+ */
+
+/* Main doc page container adjustments */
+.main-wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Doc page content container */
+.docPage_wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Main doc content area - adjust for better spacing */
+.docMainContainer {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Doc item wrapper */
+.docItemWrapper {
+  padding: 0 2rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Specific layout for docs pages with sidebar */
+@media (min-width: 997px) {
+  /* Container for doc with sidebar */
+  .docs-wrapper {
+    padding: 0;
   }
 
-  .key-features-title {
-    font-size: 2.3rem !important;
+  /* Main content area when sidebar is present */
+  .docMainContainer {
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 100px);
   }
 
-  /* Specific tablet improvements for learning and key features */
-  .learning-content {
-    max-width: 800px !important;
-    padding: 0 1rem !important;
+  /* Doc item content when sidebar exists */
+  .docItemContainer {
+    flex: 1;
+    max-width: 100%;
+    padding: 0 3rem 2rem 2rem;
   }
 
-  .key-features-section .card {
-    max-width: 900px !important;
-    padding: 2.8rem 2rem !important; /* Slightly reduced padding for tablet */
-    margin: 0 auto !important; /* Ensure card is centered */
+  /* Sidebar container */
+  .sidebar {
+    flex-shrink: 0;
+    max-width: var(--doc-sidebar-width);
+    margin-top: calc(-1 * var(--ifm-navbar-height));
+    height: calc(100vh - var(--ifm-navbar-height));
+    padding-top: var(--ifm-navbar-height);
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
   }
 
-  /* Key Features specific tablet improvements */
-  .key-features-section .row {
-    flex-wrap: nowrap !important; /* Keep items together */
-    justify-content: center !important; /* Center content */
-  }
-
-  .key-features-section .col--12 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  .key-features-section .card.highlight-card {
-    margin: 0 auto !important;
-    width: 100% !important;
-    max-width: 900px !important;
-  }
-
-  .container.text--center.padding-vert--lg {
-    padding: 4rem 1rem 4rem 4rem !important; /* Maintain left spacing */
-  }
-
-  .container.text--center.padding-vert--lg h2 {
-    font-size: 2.2rem !important;
-  }
-
-  .container.text--center.padding-vert--lg p {
-    font-size: 1.2rem !important;
-    max-width: 600px !important;
-  }
-
-  .button.button--lg {
-    padding: 1.1rem 2.8rem !important;
-    font-size: 1.25rem !important;
+  /* Ensure content uses available space properly */
+  .docItemCol {
+    max-width: 100%;
+    flex: 1;
+    padding: 0 2rem;
   }
 }
 
+/* Layout adjustments for wide screens (≥1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .docItemWrapper {
+    padding: 0 4rem;
+  }
+
+  .docItemContainer {
+    padding: 0 5rem 3rem 4rem;
+  }
+
+  /* Center the content area + sidebar without excessive whitespace */
+  .main-wrapper, .docMainContainer {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+/* Layout adjustments for medium screens (1000px-1400px) */
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .docItemContainer {
+    padding: 0 3rem 2rem 2rem;
+  }
+
+  .docItemWrapper {
+    padding: 0 2.5rem;
+  }
+}
+
+/* Ensure no horizontal overflow */
+.navbar {
+  overflow: hidden;
+}
+
+.main-wrapper, .docPage_wrapper {
+  overflow-x: hidden;
+}
+
+/* Adjust content width to use available space better */
+.theme-doc-markdown {
+  max-width: 100%;
+}
+
+/* Adjust for the right-side TOC behavior */
+.theme-doc-toc-mobile {
+  margin: 1rem 0;
+}
+
+.table-of-contents {
+  padding: 0.5rem 0;
+}
+
+/* Ensure proper spacing on all screen sizes */
+@media (max-width: 996px) {
+  .docItemWrapper {
+    padding: 0 1rem;
+  }
+
+  .docItemContainer {
+    padding: 0 1rem;
+  }
+}
+
+/* Fix for sidebar and content alignment */
+.docItemWrapperEnhanced {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Adjust doc content for better centering */
+.docContent {
+  flex: 1;
+  min-width: 0; /* Allows flex item to shrink below content size */
+}
+
+/* More specific selectors for Docusaurus v3 */
+.theme-doc-page {
+  padding: 1rem 0;
+}
+
+/* Layout fixes for doc pages specifically */
+.theme-doc-page,
+.doc-page,
+.docs-page {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Adjust the main content area for documentation */
+.main-wrapper .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Ensure sidebar and main content fill appropriate space */
+.theme-doc-sidebar-container {
+  max-width: var(--doc-sidebar-width);
+  flex: 0 0 var(--doc-sidebar-width);
+}
+
+.theme-doc-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Center content area better on large screens */
+@media (min-width: 1200px) {
+  .theme-doc-content {
+    max-width: calc(100% - var(--doc-sidebar-width));
+  }
+}
+
+  /* Tablet adjustments for feature lists and titles */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .learning-list,
+    .key-features-list {
+      font-size: 1.15rem !important;
+      line-height: 1.6 !important;
+    }
+
+    .key-features-title {
+      font-size: 2.3rem !important;
+    }
+
+    /* Specific tablet improvements for learning and key features */
+    .learning-content {
+      max-width: 800px !important;
+      padding: 0 1rem !important;
+    }
+
+    .key-features-section .card {
+      max-width: 900px !important;
+      padding: 2.8rem 2rem !important; /* Slightly reduced padding for tablet */
+      margin: 0 auto !important; /* Ensure card is centered */
+    }
+
+    /* Key Features specific tablet improvements */
+    .key-features-section .row {
+      flex-wrap: nowrap !important; /* Keep items together */
+      justify-content: center !important; /* Center content */
+    }
+
+    .key-features-section .col--12 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .key-features-section .card.highlight-card {
+      margin: 0 auto !important;
+      width: 100% !important;
+      max-width: 900px !important;
+    }
+
+    .container.text--center.padding-vert--lg {
+      padding: 4rem 1rem 4rem 4rem !important; /* Maintain left spacing */
+    }
+
+    .container.text--center.padding-vert--lg h2 {
+      font-size: 2.2rem !important;
+    }
+
+    .container.text--center.padding-vert--lg p {
+      font-size: 1.2rem !important;
+      max-width: 600px !important;
+    }
+
+    .button.button--lg {
+      padding: 1.1rem 2.8rem !important;
+      font-size: 1.25rem !important;
+    }
+  }
 /* Additional responsive improvements */
 @media (max-width: 480px) {
   .hero__title {

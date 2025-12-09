@@ -11,12 +11,15 @@
 
 ## 🤖 Welcome to the Future of AI Education
 
-**Physical AI & Humanoid Robotics** is a revolutionary course that takes AI beyond screens and into the real world. Experience firsthand how artificial intelligence comes alive when combined with physical form and motion.
+**Physical AI & Humanoid Robotics** is a revolutionary course that takes AI beyond screens and into the real world. Experience firsthand how artificial intelligence comes alive when combined with physical form and motion. This repository features a complete Retrieval-Augmented Generation (RAG) system with an AI chatbot that provides intelligent responses based on the textbook content.
 
 > *"The future of work will be a partnership between people, intelligent agents (AI software), and robots."*
 
 ### Why Physical AI Matters
 Humanoid robots are poised to excel in our human-centered world because they share our physical form and can be trained with abundant data from interacting in human environments. This represents a significant transition from AI models confined to digital environments to embodied intelligence that operates in physical space.
+
+### RAG-Powered Learning
+This course features an AI assistant that can answer your questions about the textbook content in real-time. Look for the 💬 chat button at the bottom-right of every page to ask questions and get intelligent responses based on the course material.
 
 ---
 
@@ -28,7 +31,7 @@ Humanoid robots are poised to excel in our human-centered world because they sha
 Built with Docusaurus technology, featuring personalized learning paths tailored to your background and skill level.
 
 ### 🤝 Smart RAG Chatbot
-Ask questions and get intelligent responses from our AI assistant trained on the entire course content.
+Ask questions and get intelligent responses from our AI assistant trained on the entire course content. A floating chat button appears on every page for instant access.
 
 ### 🌍 Multilingual Support
 Content available in multiple languages including Urdu to make learning accessible worldwide.
@@ -106,27 +109,45 @@ Practical exercises using ROS 2, Gazebo, NVIDIA Isaac, and real hardware.
 
 ### Ready to Begin Your Journey?
 
+#### Complete RAG System Setup
+
 **Step 1:** Clone the repository
 ```bash
 git clone https://github.com/panaversity/physical-ai-humanoid-robotics.git
 ```
 
-**Step 2:** Navigate to the frontend directory
+**Step 2:** Set up the backend API
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+**Step 3:** Configure environment variables
+```bash
+cp .env .env  # Update with your API keys
+```
+
+**Step 4:** Ingest textbook data into the vector database
+```bash
+python ingest_data.py
+```
+
+**Step 5:** Start the backend server
+```bash
+python main.py
+```
+
+**Step 6:** In a new terminal, set up the frontend
 ```bash
 cd frontend
-```
-
-**Step 3:** Install dependencies
-```bash
 npm install
-```
-
-**Step 4:** Launch the learning platform
-```bash
+echo "REACT_APP_BACKEND_URL=http://localhost:8000" > .env
 npm run start
 ```
 
-[![Open in Browser](https://img.shields.io/badge/Open_Demo-Blue?style=for-the-badge&logo=google-chrome)](#)
+Now you'll have the complete RAG system running with an AI chatbot available on all pages!
 
 </div>
 
